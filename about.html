@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>About</title>
+</head>
+
+<body>
+    <div class="container flex">
+        <a href="index.html" class="element">Home</a>
+        <a href="about.html" class="element">About</a>
+        <a href="contactUs.html" class="element">Contact Us</a>
+        <a href="cart.html" class="element"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>0</span></a>
+    </div>
+    <div class="textContain">
+        <section>
+            <!-- Card 1 -->
+            <div class="card">
+                <i class="fa fa-magnet" aria-hidden="true"></i>
+                <p class="redCl">0<i class="fa fa-usd" aria-hidden="true"></i></p>
+                <p>per month</p>
+                <hr>
+                <p class="redCl">FREE</p>
+                <p>
+                    5 team users included <br>
+                    3 domains <br>
+                    1 mailbox <br>
+                    100 Mb of space
+                </p>
+                <button class="btn">GET STARTED</button>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <i class="fa fa-car" aria-hidden="true"></i>
+                <p class="redCl">99<i class="fa fa-usd" aria-hidden="true"></i></p>
+                <p>per month</p>
+                <hr>
+                <p class="redCl">BASIC</p>
+                <p>
+                    25 team users included <br>
+                    9 domains <br>
+                    500 Mb of space <br>
+                    Free support 24/7
+                </p>
+                <button class="btn">GET STARTED</button>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <i class="fa fa-ship" aria-hidden="true"></i>
+                <p class="redCl">125<i class="fa fa-usd" aria-hidden="true"></i></p>
+                <p>per month</p>
+                <hr>
+                <p class="redCl">PRO</p>
+                <p>
+                    Unlimited team users included <br>
+                    25 domains <br>
+                    50 mailbox <br>
+                    5000 Mb of space <br>
+                    Free support 24/7
+                </p>
+                <button class="btn">GET STARTED</button>
+            </div>
+        </section>
+        <!-- <div class="iconsElement">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div> -->
+    </div>
+    <script>
+        function onLoadCartNumbers(){
+        let productNumbers = localStorage.getItem('cartNumbers');
+        if(productNumbers){
+        document.querySelector('.element span').textContent=productNumbers;
+    
+        }
+    }
+  onLoadCartNumbers();
+    </script>
+</body>
+
+</html>
